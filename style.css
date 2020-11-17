@@ -1,0 +1,52 @@
+.square {
+  width: 150px;
+  height: 150px;
+  margin: 30px auto;
+  background-color: black;
+
+  animation-name: spin;
+  animation-duration: 4s;
+}
+
+@keyframes spin {
+
+  0%{
+      transform:rotate(0deg);
+      left: 0px;
+  }
+
+  100%{
+      transform:rotate(360deg);
+      left: 500px;
+  }
+
+}
+
+
+
+
+
+.white_circle {
+
+  width: 150px;
+  height: 150px;
+  background-color: green;
+  position: relative;
+
+  animation-name: white_circle;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+
+}
+
+@keyframes white_circle {
+
+  0%{
+    left: 0;
+  }
+
+  100%{
+    left: 600px;
+  }
+
+}
